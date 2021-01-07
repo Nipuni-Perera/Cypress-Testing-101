@@ -6,7 +6,7 @@ describe("Different Test suite", () => {
     cy.location("protocol").should("eq", "https:");
     cy.hash().should('include','#/add-person');
     cy.contains('Address',{timeout:10000}).should('be.visible');
-    cy.wait(5000);
+    cy.wait(10000);
 
     //to find elements using xpath
     cy.xpath('//*[@id="differentApp"]/div/div[2]/div/div/form/div[2]/div[1]/div[1]/input').type("tester");
